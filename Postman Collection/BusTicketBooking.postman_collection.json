@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "243b2f54-a66f-47ed-aee7-d4eadeb0b25a",
+		"name": "BusTicketBooking",
+		"description": "Postman API Collection of Bus Ticket Booking System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book tickets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "clarke",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7777777777",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "clarke@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/tickets/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user details",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "clarke",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7777777777",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "clarke@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/tickets/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/tickets/viewstatus/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"viewstatus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/tickets/viewdetails/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"viewdetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Open Tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/tickets/viewopen",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"viewopen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Closed Tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/tickets/viewclose",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"viewclose"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Up All Tickets",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/tickets/admin/resetall",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tickets",
+						"admin",
+						"resetall"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
