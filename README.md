@@ -1,5 +1,7 @@
 ﻿# Bus-Ticket-Booking
  
+ ## Setting up on system
+ 
  Download the code to your system
 
  npm install to install all modules
@@ -9,6 +11,7 @@
  npm start to start the server
 
 
+## Postman
 
 POST   /tickets/book  - To book ticket   - Provide name, phone, email, age, gender to book ticket.
 
