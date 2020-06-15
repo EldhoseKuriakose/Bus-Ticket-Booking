@@ -1,32 +1,25 @@
 ﻿# Bus-Ticket-Booking
- 
- ## Setting up on system
- 
- Download the code to your system
+ Backend API of bus ticket booking system
 
- npm install to install all modules
- 
- npm test to test code
-
- npm start to start the server
+ #### Setting up on system
+ 1. Clone the repository to the system
+ 2. `npm install` - To install required packages
+ 3. `npm test` - To run unit tests
+ 4. `npm start` - To start the server
 
 
-## Postman
+##### Postman
 
-POST   /tickets/book  - To book ticket   - Provide name, phone, email, age, gender to book ticket.
+`POST` `/tickets/book` - To book ticket   - Provide name, phone, email, age, gender to book ticket.
+`PATCH` `/tickets/update/:id` - To update user details by id - Update user details by providing updated details of name, phone, email, age, gender.
+`GET` `/tickets/viewdetails/:id` - To view user details by id
+`GET` `/tickets/viewstatus/:id` - To view status of ticket by id
+`GET` `/tickets/viewopen` - To view all open tickets
+`GET` `/tickets/viewclose` - To view all closed tickets
+`PUT` `/tickets/admin/resetall` - Open up all tickets
 
-PATCH  /tickets/update/:id   - To update user details by id - Update user details by providing updated details of name, phone, email, age, gender.
+Import postman collection to postman to run commands
 
-GET    /tickets/viewdetails/:id   - To view user details by id
-
-GET   /tickets/viewstatus/:id     -   To view status of ticket by id
-
-GET   /tickets/viewopen     -  To view all open tickets
-
-GET   /tickets/viewclose    -  To view all closed tickets
-
-PUT   /tickets/admin/resetall  -  Open up all tickets
-
-
-import postman collection to postman to run commands
+###### Technologies used
+nodeJS, ExpressJS, JavaScript, MongoDB
  
