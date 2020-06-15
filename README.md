@@ -22,5 +22,5 @@
 Import postman collection to postman to run commands<br />
 
 ###### Technologies used
-nodeJS, ExpressJS, JavaScript, MongoDB
+nodeJS, ExpressJS, MongoDB
  
