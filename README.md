@@ -11,7 +11,7 @@
 ##### Postman
 
 `POST` `/tickets/book` - To book ticket   - Provide name, phone, email, age, gender to book ticket.<br />
-`PATCH` `/tickets/update/:id` - To update user details by id - Update user details by providing updated details of name, phone, email, age, gender.<br />
+`PATCH` `/tickets/update/:id` - To update user details by id - Update user details by providing updated details of name, phone, email, age,                                 gender.<br />
 `GET` `/tickets/viewdetails/:id` - To view user details by id<br />
 `GET` `/tickets/viewstatus/:id` - To view status of ticket by id<br />
 `GET` `/tickets/viewopen` - To view all open tickets<br />
